@@ -29,6 +29,8 @@ A tenant default policy is a single object that always exists and is disabled by
 
 These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
 
+> [!Note] Management of Application authentication method policies can be performed by a Global administrator, Application administrator, or Cloud application administrator. All app policy management operations require a Workload identity premium license.
+
 ## App management policy for applications and service principals
 
 App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
